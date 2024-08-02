@@ -72,7 +72,7 @@
   var Dt = /fa(s|r|l|t|d|b|k|kd|ss|sr|sl|st|sds)?[\-\ ]/,
       Kt = /Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Sharp Duotone|Sharp|Kit)?.*/i;
   var ao = {
-    "Font Awesome 5 Free": {
+    "Font Awesome 6 Free": {
       900: "fas",
       400: "far"
     },

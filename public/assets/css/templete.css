@@ -564,7 +564,7 @@ h6 {
 }
 
 /*==============
-	portfolio 
+	portfolio
 ================*/
 
 /* portfolio */
@@ -2467,7 +2467,7 @@ ol.commentlist li .meta span {
 }
 
 /* ==============
-HOME 5 Box Header 
+HOME 5 Box Header
 =============== */
 
 .roboto-condensed h6,
@@ -2698,7 +2698,7 @@ HOME 5 Box Header
 }
 
 /* .portbox3 .portinner {
-    
+
     margin: auto;
     position: relative;
     z-index: 1;
@@ -2995,7 +2995,7 @@ HOME 5 Box Header
 }
 
 .service-box-3 .title:after {
-    content: "\f105";
+    content: "\f019";
     width: 40px;
     height: 40px;
     background: #fff;
@@ -3006,7 +3006,7 @@ HOME 5 Box Header
     top: 50%;
     transform: translateY(-50%);
     line-height: 40px;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
 }
 
@@ -3858,7 +3858,7 @@ HOME 5 Box Header
 
 .frame-box .service-list li:after {
     content: "\f00c";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     background-color: var(--color-primary);
     width: 45px;
@@ -5492,7 +5492,7 @@ HOME 5 Box Header
     }
     .header-nav .nav>li.homedemo .mega-menu>li>a:after {
         content: "\f105";
-        font-family: "Font Awesome 5 Free";
+        font-family: "Font Awesome 6 Free";
         font-weight: 600;
         width: auto;
         height: auto;
@@ -7570,7 +7570,7 @@ HOME 5 Box Header
 
 .bootstrap-select .dropdown-toggle:before {
     content: "\f0d7";
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 6 Free';
     font-weight: 600;
     position: absolute;
     right: 12px;

@@ -8,6 +8,9 @@
             <div id="rev_slider_1061_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
                 <ul>
                     <!-- SLIDE  -->
+                    @php
+                        $array=['','Bienvenu </br>chez KANYCHRISTIAN', 'Obtenez n\'importe</br> quel livre chez nous', 'Telecharger des </br>livres chez nous en pdf']
+                    @endphp
                     @for ($i=1; $i<4;$i++)
                         <li data-index="rs-{{ $i }}00"
                         data-transition="fadethroughdark"
@@ -17,7 +20,7 @@
                         data-easein="default"
                         data-easeout="default"
                         data-masterspeed="2000"
-                        data-thumb="assets/images/main-slider/slide27.jpg"
+                        data-thumb="assets/images/main-slider/images{{ $i }}.jpg"
                         data-rotate="0"
                         data-saveperformance="off"
                         data-title="Creative"
@@ -32,7 +35,7 @@
                         data-param10=""
                         data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="assets/images/main-slider/slide27.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="3" class="rev-slidebg" 	data-no-retina>
+                        <img src="assets/images/main-slider/images{{ $i }}.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="3" class="rev-slidebg" 	data-no-retina>
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -123,7 +126,7 @@
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
                             style="z-index: 8; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif;">
-                            Bienvenu<br/>KanyChristian.com
+                            {!! $array[$i] !!}
                         </div>
                         <!-- LAYER NR. 5 -->
                         <div class="tp-caption tp-shape tp-shapewrapper bg-primary rs-parallaxlevel-3"
@@ -167,7 +170,7 @@
                             data-paddingright="[50,50,50,30]"
                             data-paddingbottom="[15,15,15,15]"
                             data-paddingleft="[50,50,50,30]"
-                            style="z-index: 10; white-space: nowrap; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;font-family: 'Roboto Condensed', sans-serif; border-color: var(--color-primary);"><a href="tel:+">VOIR PLUS DE LIVRES</a>
+                            style="z-index: 10; white-space: nowrap; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;font-family: 'Roboto Condensed', sans-serif; border-color: var(--color-primary);"><a href="/books">VOIR PLUS DE LIVRES</a>
                         </div>
                     </li>
 
@@ -182,7 +185,7 @@
     <!-- contact area -->
     <div class="content-block">
         {{-- About autor --}}
-        <div class="section-full">
+        <div class="section-full" id="apropos">
             <div class="row m-lr0">
                 <div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info bg-primary wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="text-white align-self-center ">
@@ -193,8 +196,8 @@
                 </div>
                 <div class="col-xl-6 col-lg-12 p-lr0 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="dlab-box overlay-gallery-bx1 lightgallery">
-                        <div class="dlab-thum dlab-img-overlay1 primary">
-                            <a href="javascript:void(0);"> <img class="img-cover" src="assets/images/gallery/chris.jpeg" height="50"  alt=""> </a>
+                        <div class="dlab-thum dlab-img-overlay6 primary">
+                            <a href="javascript:void(0);"> <img class="img-cover" src="assets/images/gallery/chris.jpeg"  alt=""> </a>
                             <div class="overlay-bx">
                                 <div class="overlay-icon">
                                     <a href="javascript:void(0);"> <i class="fas fa-play icon-bx-xs"></i> </a>
@@ -208,7 +211,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-full content-inner bg-gray">
+        <div class="section-full content-inner bg-gray" id="books">
             <div class="container">
                 <div class="section-head text-black text-center">
                     <h2 class="title">QUELQUES LIVRES</h2>
@@ -219,16 +222,16 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 m-b50 wow fadeInLeft " data-wow-duration="2s" data-wow-delay="0.3s">
                         <div class="dlab-box service-box-3">
                             <div class="dlab-media radius-sm dlab-img-overlay1">
-                                <a href="services-details.html"><img src="assets/images/our-work/mining/pic1.jpg" alt=""></a>
+                                <a href="services-details.html"><img src="assets/images/main-slider/images.jpeg" alt=""></a>
                                 <div class="dlab-info-has">
-                                    <ul class="dlab-social-icon text-white">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et id odit, ratione voluptatem laboriosam, inventore repellat ab unde consequuntur cum mollitia obcaecati hic, temporibus eum!
+                                    <ul class="dlab-social-icon text-white text-justify">
+                                        Dans le cycle arthurien, dont il est désormais indissociable, Merlin naît d'une mère humaine et d'un père diabolique. Bâtisseur de Stonehenge, il emploie ses sortilèges pour permettre la naissance du Roi Arthur et son accession au pouvoir, grâce à l'épreuve de l'épée Excalibur et à la formation de la Table ronde
                                     </ul>
                                 </div>
                             </div>
-                            <div class="dlab-info">
-                                <h4 class="title"><a href="">Mining Engineering</a></h4>
-                            </div>
+                            <a class="d-block dlab-info" href="/">
+                                <h4 class="title"><a href="">LEGEND DE MERLIN</a></h4>
+                            </a>
                         </div>
                     </div>
                     @endfor
@@ -237,79 +240,37 @@
         </div>
         <!-- About Us End -->
         <!-- Latests News -->
-        <div class="section-full content-inner bg-white">
+        <div class="section-full content-inner bg-white" id="blogs">
             <div class="container">
                 <div class="section-head text-black text-center">
-                    <h2 class="title">Latest News</h2>
+                    <h2 class="title">DERNIERE NOUVELLE</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
                 </div>
                 <div class="blog-carousel owl-carousel owl-btn-3 owl-btn-center-lr">
-                    <div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                        <div class="blog-post blog-grid blog-rounded blog-effect1">
-                            <div class="dlab-post-media dlab-img-effect "> <a href="javascript:void(0);"><img src="assets/images/our-work/mining/pic1.jpg" alt=""></a> </div>
-                            <div class="dlab-info p-a20 border-1">
-                                <div class="dlab-post-meta">
-                                    <ul>
-                                        <li class="post-date"> <strong>10 Aug</strong> <span> 2016</span> </li>
-                                        <li class="post-author"> By <a href="javascript:void(0);">Jack</a> </li>
-                                    </ul>
-                                </div>
-                                <div class="dlab-post-title">
-                                    <h4 class="post-title"><a href="blog-single.html">Seven Doubts You Should</a></h4>
-                                </div>
-                                <div class="dlab-post-text">
-                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
-                                </div>
-                                <div class="dlab-post-readmore">
-                                    <a href="blog-single.html" title="READ MORE" rel="bookmark" class="site-button btnhover13">READ MORE</a>
-                                </div>
+                   @for ($i=0; $i<5;$i++)
+                   <div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+                    <div class="blog-post blog-grid blog-rounded blog-effect1">
+                        <div class="dlab-post-media dlab-img-effect "> <a href="javascript:void(0);"><img src="assets/images/main-slider/images3.jpg" alt=""></a> </div>
+                        <div class="dlab-info p-a20 border-1">
+                            <div class="dlab-post-meta">
+                                <ul>
+                                    <li class="post-date"> <strong>10 Aug</strong> <span> 2024</span> </li>
+                                    <li class="post-author"> By <a href="javascript:void(0);">Daniel</a> </li>
+                                </ul>
+                            </div>
+                            <div class="dlab-post-title">
+                                <h4 class="post-title"><a href="/">Le savoir de Geants</a></h4>
+                            </div>
+                            <div class="dlab-post-text">
+                                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
+                            </div>
+                            <div class="dlab-post-readmore">
+                                <a href="/blog-detail" title="LIRE PLUS" rel="bookmark" class="site-button btnhover13">LIRE PLUS</a>
                             </div>
                         </div>
                     </div>
-                    <div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-                        <div class="blog-post blog-grid blog-rounded blog-effect1">
-                            <div class="dlab-post-media dlab-img-effect "> <a href="javascript:void(0);"><img src="assets/images/our-work/mining/pic2.jpg" alt=""></a> </div>
-                            <div class="dlab-info p-a20 border-1">
-                                <div class="dlab-post-meta ">
-                                    <ul>
-                                        <li class="post-date"> <strong>11 Aug</strong> <span> 2016</span> </li>
-                                        <li class="post-author"> By <a href="javascript:void(0);">Zachary</a> </li>
-                                    </ul>
-                                </div>
-                                <div class="dlab-post-title">
-                                    <h4 class="post-title"><a href="blog-single.html">The Shocking Revelation</a></h4>
-                                </div>
-                                <div class="dlab-post-text">
-                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
-                                </div>
-                                <div class="dlab-post-readmore">
-                                    <a href="blog-single.html" title="READ MORE" rel="bookmark" class="site-button btnhover13">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.9s">
-                        <div class="blog-post blog-grid blog-rounded blog-effect1">
-                            <div class="dlab-post-media dlab-img-effect "> <a href="javascript:void(0);"><img src="assets/images/our-work/mining/pic3.jpg" alt=""></a> </div>
-                            <div class="dlab-info p-a20 border-1">
-                                <div class="dlab-post-meta">
-                                    <ul>
-                                        <li class="post-date"> <strong>12 Aug</strong> <span> 2016</span> </li>
-                                        <li class="post-author"> By <a href="javascript:void(0);">Charlotte</a> </li>
-                                    </ul>
-                                </div>
-                                <div class="dlab-post-title">
-                                    <h4 class="post-title"><a href="blog-single.html">The Story Of Industry</a></h4>
-                                </div>
-                                <div class="dlab-post-text">
-                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
-                                </div>
-                                <div class="dlab-post-readmore">
-                                    <a href="blog-single.html" title="READ MORE" rel="bookmark" class="site-button btnhover13">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                   @endfor
                 </div>
             </div>
         </div>
@@ -323,7 +284,7 @@
                             <div class="">
                                 <span class="counter">7652</span>
                             </div>
-                            <span class="counter-text">Completed Projects</span>
+                            <span class="counter-text">Visiteurs</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
@@ -331,7 +292,7 @@
                             <div class="">
                                 <span class="counter">4562</span>
                             </div>
-                            <span class="counter-text">Happy Clients</span>
+                            <span class="counter-text">des livres</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
@@ -339,7 +300,7 @@
                             <div class="">
                                 <span class="counter">3569</span>
                             </div>
-                            <span class="counter-text">Questions Answered</span>
+                            <span class="counter-text">Telechargement</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
@@ -347,7 +308,7 @@
                             <div class="">
                                 <span class="counter">2089</span>
                             </div>
-                            <span class="counter-text">Ordered Coffee's</span>
+                            <span class="counter-text">De feedback</span>
                         </div>
                     </div>
                 </div>
@@ -359,11 +320,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 text-white">
-                        <h2 class="title">Amazing things happen to your business </h2>
-                        <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h2 class="title">
+                            Contactez-nous pour poster ici votre livre
+                        </h2>
+                        <p class="m-b0">
+                            Nous sommes prets a appuyer les jeunes ecrivains en leurs permettant de publier ici leur contenu tout en respectant le droit
+                            d'auteur.
+                        </p>
                     </div>
                     <div class="col-lg-3 d-flex">
-                        <a href="contact-1.html" class="site-button btnhover13 white align-self-center outline ms-auto outline-2">Contact Us</a>
+                        <a href="/contact" class="site-button btnhover13 white align-self-center outline ms-auto outline-2">Contactez-nous</a>
                     </div>
                 </div>
             </div>

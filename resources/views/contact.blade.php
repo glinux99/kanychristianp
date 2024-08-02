@@ -52,8 +52,10 @@
                 </div>
                 <div class="col-lg-8 col-md-12 m-b30">
                     <form class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s">
-                        <h3 class="title-box font-weight-300 m-t0 m-b10">Let's Convert Your Idea into Reality <span class="bg-primary"></span></h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                        <h3 class="title-box font-weight-300 m-t0 m-b10">Laissez-nous convertir votre idee dans une realite<span class="bg-primary"></span></h3>
+                        <p>
+                            Partage-nous ce que vous en penser par rapport a notre site ou par rapport au contenu ce qui peut nous aider a nous ameliorer suffisamment.
+                        </p>
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
@@ -83,12 +85,12 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fas fa-agenda text-primary"></i></span>
-                                        <textarea name="dzMessage" rows="4" class="form-control" required placeholder=""></textarea>
+                                        <textarea name="dzMessage" rows="4" class="form-control" required placeholder="tapez votre message ici et recevoir un feedback dans un bref delai"></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-md-12">
-                                <button name="submit" type="submit" value="Submit" class="site-button button-md"> <span>Get A Free Quote!</span> </button>
+                            <div class="d-flex justify-content-center">
+                                <button name="submit" type="submit" value="Submit" class="site-button button-md"> <span>Envoyer votre message</span> </button>
                             </div>
                         </div>
                     </form>

@@ -6104,7 +6104,7 @@
 }
 
 @font-face {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-style: normal;
     font-weight: 400;
     font-display: block;
@@ -6118,7 +6118,7 @@
 }
 
 @font-face {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-style: normal;
     font-weight: 900;
     font-display: block;
@@ -6129,7 +6129,7 @@
 .fa,
 .far,
 .fas {
-    font-family: "Font Awesome 5 Free"
+    font-family: "Font Awesome 6 Free"
 }
 
 .fa,

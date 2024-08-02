@@ -2723,7 +2723,7 @@ input[type=radio]+label:before {
 input[type=checkbox]+label:after {
     color: #fff;
     content: "\f00c";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     font-size: 0px;
     -webkit-font-smoothing: antialiased;
@@ -2837,7 +2837,7 @@ input[type=radio]:checked+label:before {
     color: #ffd925;
     content: "\f005";
     display: inline-block;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     font-size: 20px;
     -webkit-font-smoothing: antialiased;
@@ -3060,7 +3060,7 @@ blockquote p {
 
 blockquote:before {
     content: "\f10d";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     color: var(--color-primary);
     font-size: 35px;
@@ -3957,7 +3957,7 @@ blockquote:before {
 .header-nav .nav>li.menu-item-has-children:before {
     content: "\f078";
     display: block;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     right: 4px;
     position: absolute;
@@ -4107,7 +4107,7 @@ blockquote:before {
     .header-nav .nav>li .sub-menu li a:after,
     .header-nav .nav>li .mega-menu>li ul a:after {
         content: "\f105";
-        font-family: "Font Awesome 5 Free";
+        font-family: "Font Awesome 6 Free";
         font-weight: 600;
         width: auto;
         height: auto;
@@ -4370,7 +4370,7 @@ blockquote:before {
     }
     .header-nav .nav>li>.sub-menu .sub-menu li a:after {
         content: "\f111";
-        font-family: "Font Awesome 5 Free";
+        font-family: "Font Awesome 6 Free";
         font-weight: 600;
         width: auto;
         height: auto;
@@ -6302,7 +6302,7 @@ blockquote:before {
 .nav-links .nav-previous a:after,
 .nav-links .nav-next a:after {
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     vertical-align: middle;
     margin-left: 2px;
@@ -6618,7 +6618,7 @@ ol.comment-list li.comment .comment-meta a {
 
 ol.comment-list li.comment .comment-meta:before,
 ol.comment-list li.comment .reply a:before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     font-size: 11px;
     vertical-align: top;
@@ -6850,11 +6850,17 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .list-2 li:before {
-    content: "\e60a";
-    font-family: 'themify';
+    /* content: "\e60a";
+    font-family: 'Font Awesome 6 Free';
     font-size: 11px;
     left: 0;
-    position: absolute;
+    position: absolute; */
+    font-family: "Font Awesome 6 Free";
+    content: "\f005";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
 }
 
 .list-2 li:hover:before {
@@ -7017,7 +7023,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     left: 0;
     top: 10px;
     display: block;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
 }
 
@@ -7208,7 +7214,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .widget_calendar caption::after {
     color: #707070;
     content: ">";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     margin: 0 0 0 5px;
 }
@@ -9928,7 +9934,7 @@ ul[class*="list-"] {
 }
 
 [class*="list-"].style2.list-box>li:after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     content: "\f0da";
     left: 39px;
@@ -10888,7 +10894,7 @@ ul[class*="list-"] {
 
 .quote-left:before,
 .quote-right:after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     position: absolute;
     z-index: 10;
@@ -11422,7 +11428,7 @@ ul[class*="list-"] {
     content: "\f10e";
     bottom: -10px;
     color: #000000;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     font-size: 80px;
     opacity: 0.05;
@@ -12044,7 +12050,7 @@ ul[class*="list-"] {
 .breadcrumb-row ul li:after {
     content: "\f105";
     margin-left: 7px;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
 }
 

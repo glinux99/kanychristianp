@@ -1,5 +1,5 @@
 @font-face {
-    font-family: themify;
+    font-family: 'themify';
     src: url(fonts/themify.eot?-fvbane);
     src: url(fonts/themify.eot?#iefix-fvbane) format('embedded-opentype'), url(fonts/themify.woff?-fvbane) format('woff'), url(fonts/themify.ttf?-fvbane) format('truetype'), url(fonts/themify.svg?-fvbane#themify) format('svg');
     font-weight: 400;
@@ -8,7 +8,7 @@
 
 [class*=" ti-"],
 [class^=ti-] {
-    font-family: themify;
+    font-family: 'themify';
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -183,19 +183,19 @@
     content: "\e626"
 }
 
-.ti-arrow-up:before {
+.fas fa-arrow-up:before {
     content: "\e627"
 }
 
-.ti-arrow-right:before {
+.fas fa-arrow-right:before {
     content: "\e628"
 }
 
-.ti-arrow-left:before {
+.fas fa-arrow-left:before {
     content: "\e629"
 }
 
-.ti-arrow-down:before {
+.fas fa-arrow-down:before {
     content: "\e62a"
 }
 
@@ -375,11 +375,11 @@
     content: "\e656"
 }
 
-.ti-arrows-vertical:before {
+.fas fa-arrows-vertical:before {
     content: "\e657"
 }
 
-.ti-arrows-horizontal:before {
+.fas fa-arrows-horizontal:before {
     content: "\e658"
 }
 
@@ -387,27 +387,27 @@
     content: "\e659"
 }
 
-.ti-arrow-top-right:before {
+.fas fa-arrow-top-right:before {
     content: "\e65a"
 }
 
-.ti-arrow-top-left:before {
+.fas fa-arrow-top-left:before {
     content: "\e65b"
 }
 
-.ti-arrow-circle-up:before {
+.fas fa-arrow-circle-up:before {
     content: "\e65c"
 }
 
-.ti-arrow-circle-right:before {
+.fas fa-arrow-circle-right:before {
     content: "\e65d"
 }
 
-.ti-arrow-circle-left:before {
+.fas fa-arrow-circle-left:before {
     content: "\e65e"
 }
 
-.ti-arrow-circle-down:before {
+.fas fa-arrow-circle-down:before {
     content: "\e65f"
 }
 
@@ -787,7 +787,7 @@
     content: "\e6bd"
 }
 
-.ti-arrows-corner:before {
+.fas fa-arrows-corner:before {
     content: "\e6be"
 }
 
