@@ -20,7 +20,7 @@
                         data-easein="default"
                         data-easeout="default"
                         data-masterspeed="2000"
-                        data-thumb="assets/images/main-slider/images{{ $i }}.jpg"
+                        data-thumb="assets/images/main-slider/images{{ $i-1 }}.jpg"
                         data-rotate="0"
                         data-saveperformance="off"
                         data-title="Creative"
@@ -35,7 +35,7 @@
                         data-param10=""
                         data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="assets/images/main-slider/images{{ $i }}.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="3" class="rev-slidebg" 	data-no-retina>
+                        <img src="assets/images/main-slider/images{{ $i-1 }}.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="3" class="rev-slidebg" 	data-no-retina>
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
