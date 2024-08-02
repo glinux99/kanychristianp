@@ -24,7 +24,7 @@
                 <!-- Quik search -->
                 <div class="dlab-quik-search ">
                     <form action="#">
-                        <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
+                        <input name="search" value="" type="text" class="form-control" placeholder="Tapez et rechercher">
                         <span id="quik-search-remove"><i class="fa fa-close"></i></span>
                     </form>
                 </div>

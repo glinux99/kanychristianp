@@ -191,7 +191,7 @@
                     <div class="text-white align-self-center ">
                         <h2>A PROPOS DE KANYCHRISTIAN</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad quod aspernatur sit, id voluptates. Harum quia nesciunt laborum sunt unde tempore exercitationem fugiat eum alias repudiandae consequatur, maxime veritatis tenetur iusto. Dolor accusantium id rerum officiis hic repellat tenetur cupiditate perspiciatis voluptate soluta laudantium, atque modi iure dicta est?</p>
-                        <a href="/projets" class="site-button btnhover13 white">Voir nos projets</a>
+                        <a href="/blog" class="site-button btnhover13 white">Voir nos projets</a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-12 p-lr0 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
