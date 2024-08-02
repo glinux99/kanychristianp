@@ -9,7 +9,7 @@
 	<meta name="description" content="Industry - Factory & Industrial HTML Template" />
 	<meta property="og:title" content="Industry - Factory & Industrial HTML Template" />
 	<meta property="og:description" content="Industry - Factory & Industrial HTML Template" />
-	<meta property="og:image" content="https://industry.dexignzone.com/xhtml/social-image.png" />
+	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
 
 	<!-- FAVICONS ICON -->
