@@ -3,7 +3,7 @@
     @include('layouts.header')
     <body id="bg">
     <div class="page-wraper roboto-condensed">
-    <div id="loading-area"></div>
+    {{-- <div id="loading-area"></div> --}}
         @include('layouts.appbar')
         <!-- Content -->
       <main>

@@ -40,7 +40,7 @@
                             <a href="/#apropos">A propos</a>
                         </li>
                         <li>
-                            <a href="assets/javascript:;">Livres</i></a>
+                            <a >Livres</a>
                             <ul class="sub-menu">
                                 <li><a href="/books">Tous les livres</a></li>
                                 <li><a href="/books-news">Livres recents</a></li>
