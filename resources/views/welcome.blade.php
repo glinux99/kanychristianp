@@ -187,9 +187,9 @@
         {{-- About autor --}}
         <div class="section-full p-0 m-0" id="apropos">
             <div class="row m-0 p-0">
-                <div class="col-xl-6 col-lg-12 p-lr0  dis-tbsl latest-project-info px-5 bg-primary wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
-                    <div class="text-white align-self-center">
-                        <h3  class="m-0 pt-2">A propos de <span class="text-dark">KANY</span>CHRISTIAN</h3>
+                <div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbsl latest-project-info p-3 bg-primary wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
+                    <div class="text-white ">
+                        <h3 >A propos de <span class="text-dark">KANY</span>CHRISTIAN</h3>
                         <p class="fw-semibold fs-6 fs-lg-4 text-justify">
                             Écrivain, penseur, ingénieur et prédicateur de l'évangile, Christian Kany est un homme
                             aux multiples facettes, dont l'engagement pour la jeunesse africaine ne cesse
