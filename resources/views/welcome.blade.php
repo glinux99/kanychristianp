@@ -190,18 +190,19 @@
                 <div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info bg-primary wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="text-white align-self-center ">
                         <h2>A PROPOS DE KANYCHRISTIAN</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad quod aspernatur sit, id voluptates. Harum quia nesciunt laborum sunt unde tempore exercitationem fugiat eum alias repudiandae consequatur, maxime veritatis tenetur iusto. Dolor accusantium id rerum officiis hic repellat tenetur cupiditate perspiciatis voluptate soluta laudantium, atque modi iure dicta est?</p>
+                        <p>Écrivain, penseur, ingénieur et prédicateur de l'évangile.
+La passion qui me tient à cœur est de voir une jeunesse réfléchissante et exploitant ses potentiels au maximum.</p>
                         <a href="/blog" class="site-button btnhover13 white">Voir nos projets</a>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-12 p-lr0 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
+                <div class="col-xl-6 col-lg-12 p-lr0 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s" >
                     <div class="dlab-box overlay-gallery-bx1 lightgallery">
                         <div class="dlab-thum dlab-img-overlay6 primary">
-                            <a href="javascript:void(0);"> <img class="img-cover" src="assets/images/gallery/chris.jpeg"  alt=""> </a>
+                            <a href="javascript:void(0);"> <img class="img-cover" src="assets/images/main-slider/images0.jpg"  alt=""> </a>
                             <div class="overlay-bx">
                                 <div class="overlay-icon">
                                     <a href="javascript:void(0);"> <i class="fas fa-play icon-bx-xs"></i> </a>
-                                    <span data-exthumbimage="assets/images/gallery/chris.jpeg" data-src="assets/images/gallery/chris.jpeg" class="check-km" title="Linux99 Viewer Panel">
+                                    <span data-exthumbimage="assets/images/main-slider/images0.jpg"" data-src="assets/images/main-slider/images0.jpg" class="check-km" title="Linux99 Viewer Panel">
                                     <i class="fas fa-search icon-bx-xs"></i>
                                 </span>
                                 </div>
