@@ -187,11 +187,37 @@
         {{-- About autor --}}
         <div class="section-full" id="apropos">
             <div class="row m-lr0">
-                <div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info bg-primary wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
+                <div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info px-5 bg-primary wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="text-white align-self-center ">
-                        <h2>A PROPOS DE KANYCHRISTIAN</h2>
-                        <p>Écrivain, penseur, ingénieur et prédicateur de l'évangile.
-La passion qui me tient à cœur est de voir une jeunesse réfléchissante et exploitant ses potentiels au maximum.</p>
+                        <h2 >A propos de <span class="text-dark">KANY</span>CHRISTIAN</h2>
+                        <p class="fw-semibold fs-6 fs-lg-4 text-justify">
+                            Écrivain, penseur, ingénieur et prédicateur de l'évangile, Christian Kany est un homme
+                            aux multiples facettes, dont l'engagement pour la jeunesse africaine ne cesse
+                            d'inspirer. Son parcours, riche d'expériences et de connaissances, se traduit par
+                            une œuvre littéraire profonde, une réflexion aiguisée sur les enjeux de son temps,
+                            et une action concrète auprès des jeunes générations.
+                        </p>
+                        <h4>Un esprit éclairé</h4>
+                        <p class="fw-semibold fs-6 fs-lg-4 text-justify">
+                            La plume de Christian Kany est guidée par une quête insatiable de vérité et de sens.
+                            Ses écrits, empreints de sagesse et d'humanité, explorent les profondeurs de l'âme
+                            humaine et invitent à une réflexion critique sur le monde qui nous entoure. En tant
+                            que penseur, il aborde des sujets d'actualité avec une acuité et une perspicacité
+                            rares, offrant des analyses éclairées et des solutions constructives.
+                        </p>
+                        <h4>Un ingénieur au service du progrès</h4>
+                        <p class="fw-semibold fs-6 fs-lg-4 text-justify">
+                            Son esprit scientifique lui permet d'appréhender le monde avec rigueur et précision.
+                            Ingénieur de formation, Christian Kany met ses compétences au service du progrès et
+                            du développement. Son engagement dans ce domaine se traduit par des réalisations
+                            concrètes qui contribuent à améliorer la vie des populations africaines.
+                        </p>
+                        <h4>Un prédicateur de l'évangile porteur d'espoir</h4>
+                        <p class="fw-semibold fs-6 fs-lg-4  text-justify">
+                            Homme de foi profonde, Christian Kany trouve dans l'évangile une source d'inspiration
+                            et de réconfort. Sa prédication, empreinte de compassion et d'authenticité, touche
+                            les cœurs et offre un message d'espoir aux jeunes générations.
+                        </p>
                         <a href="/blog" class="site-button btnhover13 white">Voir nos projets</a>
                     </div>
                 </div>

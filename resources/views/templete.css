@@ -3183,16 +3183,16 @@ HOME 5 Box Header
     -o-transform: scale(1);
 }
 
-.latest-project-info {
+.kanychristian.com {
     /* padding: 100px 130px; */
 }
 
-.latest-project-info h2 {
+.kanychristian.com h2 {
     font-size: 50px;
     line-height: 60px;
 }
 
-.latest-project-info p {
+.kanychristian.com p {
     color: rgba(255, 255, 255, 0.75);
     font-weight: 300;
 }
@@ -4597,15 +4597,15 @@ HOME 5 Box Header
 
 /* Latest project info Style1 */
 
-.latest-project-info.style1 {
+.kanychristian.com.style1 {
     padding: 70px 70px 10px;
 }
 
-.latest-project-info.style1 .list-check li p {
+.kanychristian.com.style1 .list-check li p {
     font-size: 16px;
 }
 
-.latest-project-info.style1 .list-check li:before {
+.kanychristian.com.style1 .list-check li:before {
     top: 20px;
 }
 
@@ -5383,7 +5383,7 @@ HOME 5 Box Header
         padding: 8px 0;
         font-size: 14px;
     }
-    .latest-project-info {
+    .kanychristian.com {
         padding: 50px;
     }
     .social-curve:before {
@@ -5478,7 +5478,7 @@ HOME 5 Box Header
     .request-form {
         margin-top: 0;
     }
-    .latest-project-info.style1 {
+    .kanychristian.com.style1 {
         padding: 50px 50px 0px;
     }
     .header-nav .nav>li.homedemo .mega-menu {
@@ -5667,7 +5667,7 @@ HOME 5 Box Header
         font-size: 100px;
         line-height: 120px;
     }
-    .latest-project-info.style1 {
+    .kanychristian.com.style1 {
         padding: 30px 30px 0px;
     }
     .list-check.list-2.rounded.border[class*="list-"] li {
@@ -5742,10 +5742,10 @@ HOME 5 Box Header
         margin-left: 0;
         margin-right: 0;
     }
-    .latest-project-info {
+    .kanychristian.com {
         padding: 30px;
     }
-    .latest-project-info h2 {
+    .kanychristian.com h2 {
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 10px;
