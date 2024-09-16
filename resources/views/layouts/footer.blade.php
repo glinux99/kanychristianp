@@ -1,67 +1,150 @@
-<footer class="site-footer footer-gray-1">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                    <div class="widget border-0">
-                        <h6 class="m-b20 text-white font-weight-300 text-uppercase">Liens Rapides</h6>
-                        <ul class="list-2">
-                            <li><a href="/about">Apropos</a></li>
-                            <li><a href="/download">Pdf</a></a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/privacy">Privacy Policy</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                            <li><a href="/authors">Auteurs</a></li>
-                        </ul>
-                    </div>
+
+<section class="bg-dark py-5 text-light footer-widget">
+    <div class="container">
+        <div class="row text-white">
+            <div class="col-lg-4 d-none d-lg-block d-md-block text-center text-md-left">
+                <div class="mt-4">
+                    <a href="/" class="d-block">
+                        <img class="h-150px" src="/assets/images/logo-white.png" alt="crhis" height="10">
+                    </a>
+
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                    <div class="widget">
-                        <h6 class="m-b20 text-white font-weight-300 text-uppercase">Newsletter</h6>
-                        <div class="subscribe-form m-b20 m-t30">
-                            <form class="dzSubscribe" action="/" method="post">
-                                <div class="dzSubscribeMsg"></div>
-                                <div class="input-group">
-                                    <input name="dzEmail" required="required" class="form-control radius-no" placeholder="Votre addresse Email" type="email">
-                                    <span class="input-group-btn">
-                                    <button name="submit" value="Submit" type="submit" class="site-button btnhover13 radius-no">Envoyer</button>
-                                </span>
-                                </div>
-                            </form>
-                        </div>
-                        <h6 class="m-b10 text-white font-weight-300 text-uppercase">Connectez-vous avec</h6>
-                        <ul class="list-inline m-a0">
-                            <li><a href="javascript:void(0);" class="site-button btnhover13 facebook sharp"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button btnhover13 google-plus sharp"><i class="fab fa-google-plus-g"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button btnhover13 linkedin sharp"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button btnhover13 instagram sharp"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button btnhover13 twitter sharp"><i class="fab fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
+            </div>
+
+            <div class="col-md-4 col-6  col-lg-3">
+                <div class="text-left   mt-4">
+                    <h4 class="fs-6 text-uppercase fw-600 border-bottom pb-2 mb-4">
+                        Nos avantages                     </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a class="opacity-50 hov-opacity-100 text-reset" href="/">
+                                Offert immédiatement                             </a>
+                            </li>
+                            <li class="mb-2">
+                                    <a class="opacity-50 hov-opacity-100 text-reset" href="/">
+                                        Aucun paiement requis                             </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a class="opacity-50 hov-opacity-100 text-reset" href="/">
+                                            Acces illimite a nos livres                             </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a class="opacity-50 hov-opacity-100 text-reset" href="/">
+                                                Pas besoin d'avoir un compte                            </a>
+                                            </li>
+                                        <li class="mb-2">
+                                            <a class="opacity-50 hov-opacity-100 text-reset" href="/">
+                                                Telechargement rapide et facile                             </a>
+                                        </li>
+                                    </ul>
                 </div>
-                <div class="col-lg-5 col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.6s">
-                    <div class="icon-bx-wraper bx-style-1 m-b15 p-a30 radius-sm br-col-w1 bg-tpw1">
-                        <h5 class="text-white font-weight-300">
-                            Notre platforme serve vous permette de telecharger plusieurs livres au format pdf de plusieurs auteurs dans plusieurs langues
-                            . Neamoins nous privilegions les auteurs locaux ainsi que la langue Francaise.</h5>
-                        <p>RD Congo (RDC), RWANDA (RD), BURUNDI (BD), KENYA (KY), FRANCE (FR) etc.</p>
-                    </div>
+                <!-- <div class="text-center text-md-left mt-4 d-none d-lg-block d-md-block">
+                    <a href="http://jewstrading.com/register" class="text-white">
+                        <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                            Devenir un partenaire                         </h4>
+                    </a>
+                </div> -->
+            </div>
+            <div class="col-lg-3 col-6 ml-auto col-md-4 mr-0">
+                <div class="text-left mt-4">
+                    <h4 class="fs-6 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                        Contact                     </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <span class="d-block opacity-30">Adresse</span>
+                            <span class="d-block opacity-70"> Goma, Centre ville</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="d-block opacity-30">Telephone</span>
+
+
+                            <span class="d-block opacity-70">
+                                <a href="tel:+243975577185" class="text-white">+243 975 577 185</a>
+                            </span>
+                            <!--<span class="d-block opacity-70">+243 814 536 299</span>-->
+                        </li>
+                        <li class="mb-2">
+                            <span class="d-block opacity-30">Email:</span>
+                            <span class="d-block opacity-70">
+                                <a href="mailto:support@kanycrhistian.com" class="text-white">support@kanycrhistian.com</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4 col-md-4">
+                <div class="text-left mt-4">
+                    <h4 class="fs-6 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                        Liens rapides                     </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="opacity-50 hov-opacity-100 text-reset">
+                                Aides                             </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="opacity-50 hov-opacity-100 text-reset">
+                                Support                             </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="/" class="opacity-50 hov-opacity-100 text-reset">
+                                Joignez-nous                             </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="/contact" class="opacity-50 hov-opacity-100 text-reset">
+                                Contactez-nous                             </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="opacity-50 hov-opacity-100 text-reset">
+                                Nos partenaires                             </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- footer bottom part -->
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © 2024 <a href="/" target="_blank">{{ Config('app.name') }}</a>. all rights reserved.</span> </div>
-                <div class="col-md-6 col-sm-6 text-right ">
-                    <div class="widget-link ">
-                        <ul>
-                            <li><a href="/"> Powered by LaureMak</a></li>
-                            <li><a href="/">  Linux99</a></li>
-                        </ul>
-                    </div>
+</section>
+<footer class="pt-md-3 pt-2 pb-md-7 pb-xl-0 bg-black text-light">
+    <div class="container ">
+        <div class="row align-items-center fs-9">
+            <div class="col-lg-4 " >
+                <div class="text-center text-md-left opacity-40" current-verison="1.2">
+                    © 2024 <a href="/login" class="text-white ">
+                    {{ Config('app.name') }}</a>| Limited. All Rights Reserved. <br>
+                   Developpe par <a href="#" target="_blank" rel="noopener noreferrer" class="text-white">
+                       <small> LaureMak & Linux99</small>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <ul class="list-inline my-md-3 my-md-0 social text-center">
+                    <li class="list-inline-item">
+                        <a href="" target="_blank" class="facebook soc text-reset d-inline-block opacity-60 py-2"><i class="soc fab fa-facebook-f text-white la-lg opacity-50"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="" target="_blank" class="twitter soc text-reset d-inline-block opacity-60 py-2"><i class="fab fa-twitter text-white la-lg opacity-50"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="" target="_blank" class="instagram soc text-reset d-inline-block opacity-60 py-2"><i class="fab fa-instagram text-white la-lg opacity-50"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="" target="_blank" class="youtube soc text-reset d-inline-block opacity-60 py-2"><i class="fab fa-youtube text-white la-lg opacity-50"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="" target="_blank" class="linkedin soc text-reset d-inline-block opacity-60 py-2"><i class="fab fa-linkedin-in text-white la-lg opacity-50"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://wa.me/243975577185?text='bonjour Christian, j'aimerai bien vous contacter'" target="_blank" class="whatsapp soc text-reset d-inline-block opacity-60 py-2"><i class="fab fa-whatsapp text-white la-lg opacity-60"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-center text-md-right">
+                    <ul class="list-inline mb-0">
+                        <a href="" class="text-white">
+                            <span class="text-center text-md-left opacity-40 fs-9">
+                                Terms &amp; Condition | Cookie Policy                             </span>
+                        </a>
+                    </ul>
                 </div>
             </div>
         </div>

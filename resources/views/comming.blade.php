@@ -6,9 +6,9 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
-	<meta name="description" content="Industry - Factory & Industrial HTML Template" />
-	<meta property="og:title" content="Industry - Factory & Industrial HTML Template" />
-	<meta property="og:description" content="Industry - Factory & Industrial HTML Template" />
+	<meta name="description" content="Kany christian Livre" />
+	<meta property="og:title" content="Kany christian Livre" />
+	<meta property="og:description" content="Kany christian Livre" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
 
@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
 
 	<!-- PAGE TITLE HERE -->
-	<title>Industry - Factory & Industrial HTML Template</title>
+	<title>Kany christian Livre</title>
 
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">

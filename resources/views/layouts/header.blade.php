@@ -20,12 +20,17 @@
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.min.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
 
     <!-- STYLESHEETS -->
+    {{-- <link href="admin/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" /> --}}
+    {{-- <link href="admin/assets/css/style.bundle.css" rel="stylesheet" type="text/css" /> --}}
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.style.css">
     <link rel="stylesheet" href="assets/plugins/themify/themify-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -35,6 +40,7 @@
     <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+
 	<!-- Google Font -->
 	<style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
