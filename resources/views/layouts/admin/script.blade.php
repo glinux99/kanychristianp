@@ -1,4 +1,4 @@
-<script>var hostUrl = "assets/";</script>
+{{-- <script>var hostUrl = "assets/";</script> --}}
 		{{-- <!--begin::Javascript-->
 		<!--begin::Global Javascript Bundle(used by all pages)-->
 		<script src="admin/assets/plugins/global/plugins.bundle.js"></script>

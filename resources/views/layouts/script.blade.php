@@ -34,6 +34,9 @@
 <script src="assets/plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
 <script src="assets/js/rev.slider.js"></script>
 <script>
+     function addingDonwloadBook($id){
+        alert(2222);
+    }
 jQuery(document).ready(function() {
 	'use strict';
     dz_rev_slider_13();

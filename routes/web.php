@@ -5,12 +5,11 @@ use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategorieController;
+use App\Http\Controllers\SiteController;
 use App\Http\Controllers\VisitorController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [SiteController::class, 'index']);
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -20,12 +19,8 @@ Route::get('/comming', function () {
 Route::get('/blog-detail', function () {
     return view('blog_detail');
 });
-Route::get('/blogs', function () {
-    return view('blog');
-});
-Route::get('/books', function () {
-    return view('books');
-});
+Route::get('/blogs', [SiteController::class, 'blogs']);
+Route::get('/books', [SiteController::class, 'books']);
 Route::get('/books-new', function () {
     return view('blog_detail');
 });

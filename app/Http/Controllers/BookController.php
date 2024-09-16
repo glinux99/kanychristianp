@@ -39,16 +39,33 @@ class BookController extends Controller
 
 
         if ($request->file()) {
-            foreach ($request->file() as $index => $image) {
-                $fileName = $index . str::uuid().'.png';
+            // foreach ($request->file() as $index => $image) {
+                $image= $request->file('avatar');
+                $image2= $request->file('document');
+
+           if($image) {
+            $fileName =  str::uuid().'.png';
                 $path = $image->storeAs(
                     'images/',
                     $fileName,
                     'public'
                 );
                 // array_push($img, $fileName);
-            }
-            $book->update(['avatar'=>'/storage/images/'.$fileName]);
+                $book->update(['avatar'=>'/storage/images/'.$fileName]);}
+            // }
+
+           if($image2){
+            $fileName =  str::uuid().'.pdf';
+            $path = $image2->storeAs(
+                'images/books/',
+                $fileName,
+                'public'
+            );
+            $book->update(['file'=>'/storage/images/books/'.$fileName]);
+            // dd($fileName);
+           }
+           // array_push($img, $fileName);
+       // }
 
         }
         return $this->index();

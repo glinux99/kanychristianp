@@ -57,7 +57,7 @@
         <!--begin::Hot sales post-->
         <div class="card bgi-no-repeat card-xl-stretch mb-xl-8 p-5" style="background-position: right top; background-size: 30% auto; background-image: url(admin/assets/media/svg/shapes/abstract-4.svg)">
             <!--begin::Overlay-->
-            <a class="d-block overlay" data-fslightbox="lightbox-hot-sales" href="'{{ $book->avatar ?? 'admin/assets/media/stock/600x400/img-23.jpg' }}'">
+            <a class="d-block overlay" data-fslightbox="lightbox-hot-sales" href="{{ $book->avatar ?? 'admin/assets/media/stock/600x400/img-23.jpg' }}">
                 <!--begin::Image-->
                 <div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('{{ $book->avatar ?? 'admin/assets/media/stock/600x400/img-23.jpg' }}')"></div>
                 <!--end::Image-->
@@ -76,7 +76,7 @@
                 </a>
                 <!--end::Title-->
                 <!--begin::Text-->
-                <div class="fw-bold fs-5 text-gray-600 text-dark mt-3">
+                <div class="fw-bold fs-5 text-gray-600 text-dark mt-3 mh-100px overflow-hidden">
                     {{ $book->synopsis }}
                 </div>
                 <!--end::Text-->
@@ -151,7 +151,9 @@
                                 <!--end::Label-->
                                 <input type="text" class="form-control form-control-solid" placeholder="Entrez le titre" name="title">
                             <div class="fv-plugins-message-container invalid-feedback"></div></div>
-                             <!--begin::Input group-->
+                           <div class="row">
+                            <div class="col-md-6">
+                                  <!--begin::Input group-->
                         <div class="row g-9 mb-8" data-select2-id="select2-data-72-usj2">
                             <!--begin::Col-->
                             <div class="fv-row fv-plugins-icon-container" data-select2-id="select2-data-71-cvzs">
@@ -168,6 +170,12 @@
 
                         </div>
                         <!--end::Input group-->
+                            </div>
+                            <div class="col-md-6">
+                                <label class="required fs-6 fw-bold mb-2">Document pdf</label>
+                                <input type="file" name="document" id="" class="form-control">
+                            </div>
+                           </div>
                         </div>
                         <div class="col-4">
                             <div class="fv-row ">
@@ -213,7 +221,7 @@
                                 <!--begin::Col-->
                                 <div class="fv-row fv-plugins-icon-container" >
                                     <label class="required fs-6 fw-bold mb-2">Categorie</label>
-                                    <select class="form-select form-select-solid select2-hidden-accessible" data-control="select2" multiple data-hide-search="true" data-placeholder="Auteur" name="categorie_id"  tabindex="-1" aria-hidden="true">
+                                    <select class="form-select form-select-solid select2-hidden-accessible" data-control="select2" multiple data-hide-search="true" data-placeholder="categorie" name="categorie_id"  tabindex="-1" aria-hidden="true">
 
                                         @foreach ($categories as $author)
                                         <option value="{{ $author->id }}" >

@@ -15,7 +15,8 @@ class Book extends Model
         'avatar',
         'donwload',
         'due_date',
-        'categorie_id'
+        'categorie_id',
+        'file'
     ];
     public function author(){
         return $this->hasOne(Author::class, 'id', 'author_id')->with('user');

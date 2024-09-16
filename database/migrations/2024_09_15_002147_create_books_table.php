@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('synopsis')->nullable();
             $table->string('avatar')->nullable();
+            $table->string('file')->nullable();
             $table->date('due_date')->nullable();
             $table->boolean('donwload')->nullable()->default(true);
             $table->timestamps();

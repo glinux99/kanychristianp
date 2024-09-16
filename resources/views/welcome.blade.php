@@ -245,23 +245,31 @@
                     <p>Une liste de nos meilleurs livres</p>
                 </div>
                 <div class="row">
-                    @for ($i=0; $i<6;$i++)
-                    <div class="col-lg-4 col-md-6 col-sm-12 m-b50 wow fadeInLeft " data-wow-duration="2s" data-wow-delay="0.3s">
-                        <div class="dlab-box service-box-3">
-                            <div class="dlab-media radius-sm dlab-img-overlay1">
-                                <a href="services-details.html"><img src="assets/images/main-slider/images.jpeg" alt=""></a>
-                                <div class="dlab-info-has">
-                                    <ul class="dlab-social-icon text-white text-justify">
-                                        Dans le cycle arthurien, dont il est désormais indissociable, Merlin naît d'une mère humaine et d'un père diabolique. Bâtisseur de Stonehenge, il emploie ses sortilèges pour permettre la naissance du Roi Arthur et son accession au pouvoir, grâce à l'épreuve de l'épée Excalibur et à la formation de la Table ronde
-                                    </ul>
-                                </div>
+                   @foreach ($books as $book)
+                   <div class="col-lg-4 col-md-6 col-sm-12 m-b50 wow fadeInLeft " data-wow-duration="2s" data-wow-delay="0.3s">
+                    <div class="dlab-box service-box-3">
+                        <div class="dlab-media radius-sm dlab-img-overlay1">
+                            <a href="#"><img src="{{ $book->avatar ?? 'assets/images/default-book.webp' }}" onerror="this.src='assets/images/default-book.webp" class="h-300px" alt=""></a>
+                            <div class="dlab-info-has">
+                                <ul class="dlab-social-icon text-white text-justify">
+                                   {{ $book->synopsis }}
+                                </ul>
                             </div>
-                            <a class="d-block dlab-info" href="/">
-                                <h4 class="title"><a href="">LEGEND DE MERLIN</a></h4>
-                            </a>
                         </div>
+
+                        <a class="d-block dlab-info" href="{{ $book->file }}" >
+                            <h4 class="bg-primary rounded p-1 d-flex justify-content-between align-items-center">
+                                <a href="{{ $book->file }}" onclick="addingDonwloadBook($book->id)" class="p-2 text-white">
+                                    {{ $book->title }}
+                                </a>
+                                <a href="{{ $book->file }}" onclick="addingDonwloadBook($book->id)" class="text-white">
+                                    <i class="fa fa-download me-2"></i>
+                                </a>
+                            </h4>
+                        </a>
                     </div>
-                    @endfor
+                </div>
+                   @endforeach
                 </div>
             </div>
         </div>
@@ -317,7 +325,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
                         <div class="counter-style-1 text-center text-white">
                             <div class="">
-                                <span class="counter">4562</span>
+                                <span class="counter">
+                                    {{ $books->count() }}
+                                </span>
                             </div>
                             <span class="counter-text">des livres</span>
                         </div>

@@ -110,8 +110,8 @@
                 <div class="text-center text-md-left opacity-40" current-verison="1.2">
                     © 2024 <a href="/login" class="text-white ">
                     {{ Config('app.name') }}</a>| Limited. All Rights Reserved. <br>
-                   Developpe par <a href="#" target="_blank" rel="noopener noreferrer" class="text-white">
-                       <small> LaureMak & Linux99</small>
+                   Design by <a href="#" target="_blank" rel="noopener noreferrer" class="text-white">
+                       <small> <a href="">LaureMak</a> &  <a href="+243970912428">Linux99</a></small>
                     </a>
                 </div>
             </div>
