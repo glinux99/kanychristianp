@@ -29,7 +29,7 @@
 								<!--end::Title-->
 								<!--begin::Link-->
 								<div class="text-gray-400 fw-bold fs-4">Connecter pour publier des livres
-								<a href="#" class="link-primary fw-bolder">ou demander une autorisation</a></div>
+								<a href="#" class="link-dark fw-bolder">ou demander une autorisation</a></div>
 								<!--end::Link-->
 							</div>
 							<!--begin::Heading-->
@@ -51,7 +51,7 @@
 									<label class="form-label fw-bolder text-dark fs-6 mb-0">Mot de passe</label>
 									<!--end::Label-->
 									<!--begin::Link-->
-									<a href="#" class="link-primary fs-6 fw-bolder">Mot de passe oublie ?</a>
+									<a href="#" class="link-dark fs-6 fw-bolder">Mot de passe oublie ?</a>
 									<!--end::Link-->
 								</div>
 								<!--end::Wrapper-->
@@ -63,7 +63,7 @@
 							<!--begin::Actions-->
 							<div class="text-center">
 								<!--begin::Submit button-->
-								<button type="submit"  class="btn btn-lg btn-primary w-100 mb-5">
+								<button type="submit"  class="btn btn-lg btn-dark w-100 mb-5">
 									<span class="indicator-label">Se connecter</span>
 								</button>
 								<!--end::Submit button-->

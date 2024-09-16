@@ -39,13 +39,15 @@ Route::get('artisan/{query}', function ($query) {
 });
 
 
-Route::resources([
-    'admin/blogs'=>BlogController::class,
-    'admin/books'=>BookController::class,
-    'admin/visitors'=>VisitorController::class,
-    'admin/categories'=>CategorieController::class,
-    'admin/authors'=>AuthorController::class,
-]);
+Route::group(['middleware' => 'auth'], function(){
+    Route::resources([
+        'admin/blogs'=>BlogController::class,
+        'admin/books'=>BookController::class,
+        'admin/visitors'=>VisitorController::class,
+        'admin/categories'=>CategorieController::class,
+        'admin/authors'=>AuthorController::class,
+    ]);
+});
 Route::get('admin/home', [AdminController::class, 'index'])->name('admin.index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

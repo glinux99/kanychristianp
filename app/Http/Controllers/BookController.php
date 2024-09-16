@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Author;
 use App\Models\Book;
+use App\Models\Categorie;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class BookController extends Controller
 {
@@ -15,7 +17,8 @@ class BookController extends Controller
     {
         $authors = Author::with('user')->get();
         $books = Book::all();
-        return view('admin.books', ['authors'=>$authors, 'books'=>$books]);
+        $categories = Categorie::all();
+        return view('admin.books', ['authors'=>$authors, 'books'=>$books, 'categories'=>$categories]);
     }
 
     /**
@@ -32,7 +35,23 @@ class BookController extends Controller
     public function store(Request $request)
     {
         //
-        return $request->all();
+        $book = Book::create($request->all());
+
+
+        if ($request->file()) {
+            foreach ($request->file() as $index => $image) {
+                $fileName = $index . str::uuid().'.png';
+                $path = $image->storeAs(
+                    'images/',
+                    $fileName,
+                    'public'
+                );
+                // array_push($img, $fileName);
+            }
+            $book->update(['avatar'=>'/storage/images/'.$fileName]);
+
+        }
+        return $this->index();
     }
 
     /**

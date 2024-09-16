@@ -13,7 +13,7 @@
     <link rel="canonical" href="#" />
     <link rel="shortcut icon" href="assets/images/logo-white.png" />
     <!--begin::Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    {{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" /> --}}
     <!--end::Fonts-->
 
     <link href="admin/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />

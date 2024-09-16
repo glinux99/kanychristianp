@@ -74,19 +74,7 @@
             <!--begin::Action group-->
             <div class="d-flex align-items-center overflow-auto pt-3 pt-lg-0">
                 <!--begin::Action wrapper-->
-                <div class="d-flex align-items-center">
-                    <!--begin::Label-->
-                    <span class="fs-7 fw-bolder text-gray-700 pe-4 text-nowrap d-none d-xxl-block">Sort By:</span>
-                    <!--end::Label-->
-                    <!--begin::Select-->
-                    <select class="form-select form-select-sm form-select-solid w-100px w-xxl-125px" data-control="select2" data-placeholder="Latest" data-hide-search="true">
-                        <option value=""></option>
-                        <option value="1" selected="selected">Latest</option>
-                        <option value="2">In Progress</option>
-                        <option value="3">Done</option>
-                    </select>
-                    <!--end::Select-->
-                </div>
+
                 <!--end::Action wrapper-->
                 <!--begin::Action wrapper-->
                 <div class="d-flex align-items-center">
