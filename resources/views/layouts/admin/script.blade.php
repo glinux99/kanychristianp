@@ -25,3 +25,22 @@
 		<script src="admin/assets/js/custom/apps/chat/chat.js"></script>
 		<script src="admin/assets/js/custom/modals/create-app.js"></script>
 		<script src="admin/assets/js/custom/modals/upgrade-plan.js"></script>
+            <script>
+                function updateFunction(self){
+                    // alert(self);
+                    document.getElementById('id').value
+                    document.getElementById("title").value=self.title;
+                    document.getElementById("description").value=self.description;
+                    // alert(123);
+                }
+
+                function updateFunctionAuthor(self){
+                    // alert(self.id);
+                    document.getElementById('id').value=self.id;
+                    // document.getElementById("title").value=self.title;
+                    document.getElementById("name").value=self.user.name;
+                    document.getElementById("description").value=self.user.description ;
+                    // alert(123);
+                }
+
+            </script>

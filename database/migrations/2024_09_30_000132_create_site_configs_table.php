@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('visitors', function (Blueprint $table) {
+        Schema::create('site_configs', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('book_id')->unsigned()->nullable();
-            $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
-            $table->string('ip')->nullable();
-            $table->boolean('download')->default(false)->nullable();
+            $table->text('pub')->nullable();
+            $table->string('avatar')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('visitors');
+        Schema::dropIfExists('site_configs');
     }
 };

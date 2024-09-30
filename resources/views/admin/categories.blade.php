@@ -39,7 +39,7 @@
 
         <!--end::Page title-->
         <!--begin::Actions-->
-        <div class="d-flex align-items-center py-1">
+        <div class="my-3">
             <!--begin::Button-->
             <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#add_book" >Ajouter une categorie</a>
             <!--end::Button-->
@@ -85,7 +85,9 @@
                             <td>
                                 <div class="d-flex align-items-center">
                                     <div class="symbol symbol-45px me-5">
-                                        <img src="" alt="avatar">
+                                        <span class="symbol-label bg-light-dark text-success fw-bolder">
+                                            {{ $categorie->title[0] }}
+                                        </span>
                                     </div>
                                     <div class="d-flex justify-content-start flex-column">
                                         <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">
@@ -127,7 +129,8 @@
                                         </span>
                                         <!--end::Svg Icon-->
                                     </a>
-                                    <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+
+                                    <a  data-bs-toggle="modal" data-bs-target="#add_book" onclick="updateFunction({{ $categorie }})" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
                                         <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
                                         <span class="svg-icon svg-icon-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -137,7 +140,7 @@
                                         </span>
                                         <!--end::Svg Icon-->
                                     </a>
-                                    <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+                                    <a href="/categorie/{{ $categorie->id }}" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
                                         <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
                                         <span class="svg-icon svg-icon-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -210,13 +213,14 @@
                             <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Entrez le titre de cette categorie" aria-label="Specifiez le titre de cette categorie" data-bs-original-title="Entrez le titre  de cette categorie" aria-label="specifiez le titre de cette categorie"></i>
                         </label>
                         <!--end::Label-->
-                        <input type="text" class="form-control form-control-solid" placeholder="Entrez le nom complet" name="title">
+                        <input type="hidden" id="id" name="id">
+                        <input type="text" id="title" class="form-control form-control-solid" placeholder="Entrez le nom complet" name="title">
                     <div class="fv-plugins-message-container invalid-feedback"></div></div>
                     <!--end::Input group-->
                     <!--begin::Input group-->
                     <div class="d-flex flex-column mb-8">
                         <label class="fs-6 fw-bold mb-2">Description de la categorie</label>
-                        <textarea class="form-control form-control-solid" rows="3" name="description" placeholder="Une breve description de la categorie"></textarea>
+                        <textarea class="form-control form-control-solid" rows="3" id="description" name="description" placeholder="Une breve description de la categorie"></textarea>
                     </div>
                     <!--end::Input group-->
                     <!--end::Input group-->

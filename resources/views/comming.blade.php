@@ -45,7 +45,6 @@
 </head>
 <body id="bg">
 <div class="page-wraper">
-<div id="loading-area"></div>
 	<!-- Coming Soon Slider -->
 	<div id="rev_slider_152_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="coming-soon" data-source="gallery" style="background-color:#222222;padding:0px;">
 	<!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
@@ -53,7 +52,7 @@
 			<ul><!-- SLIDE  -->
 				<li data-index="rs-414" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 					<!-- MAIN IMAGE -->
-					<img src="assets/images/background/cs.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+					<img src="{{ $avatar }}"  alt="image" style="background: no-repeat"  data-bgposition="center center" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
 					<!-- LAYERS -->
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption   tp-resizeme"
@@ -100,8 +99,7 @@
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
 
-						style="z-index: 6; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Poppins;letter-spacing:-5px;">LAUNCHING
-					</div>
+						style="z-index: 6; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Poppins;letter-spacing:-5px;">LANCEMENT					</div>
 					<!-- LAYER NR. 3 -->
 					<div class="tp-caption   tp-resizeme"
 						id="slide-414-layer-3"
@@ -124,7 +122,7 @@
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
 
-						style="z-index: 7; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Poppins;letter-spacing:-5px;">VERY SOON.
+						style="z-index: 7; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Poppins;letter-spacing:-5px;">TRÈS BIENTOT.
 					</div>
 					<!-- LAYER NR. 4 -->
 					<div class="tp-caption   tp-resizeme"
@@ -147,7 +145,7 @@
 						data-paddingleft="[0,0,0,0]"
 						data-blendmode="screen"
 
-						style="z-index: 8; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#ff5e14;font-family:Poppins;letter-spacing:-5px;"
+						style="z-index: 8; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#0400f5;font-family:Poppins;letter-spacing:-5px;"
 						id="t_days">00
 					</div>
 					<!-- LAYER NR. 5 -->
@@ -171,7 +169,7 @@
 						data-paddingleft="[0,0,0,0]"
 						data-blendmode="screen"
 
-						style="z-index: 9; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#ff5e14;font-family:Poppins;letter-spacing:-5px;"
+						style="z-index: 9; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#0400f5;font-family:Poppins;letter-spacing:-5px;"
 						id="t_hours">00
 					</div>
 					<!-- LAYER NR. 6 -->
@@ -195,7 +193,7 @@
 						data-paddingleft="[0,0,0,0]"
 						data-blendmode="screen"
 
-						style="z-index: 10; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#ff5e14;font-family:Poppins;letter-spacing:-5px;"
+						style="z-index: 10; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#0400f5;font-family:Poppins;letter-spacing:-5px;"
 						id="t_minutes">00
 					</div>
 					<!-- LAYER NR. 7 -->
@@ -219,7 +217,7 @@
 						data-paddingleft="[0,0,0,0]"
 						data-blendmode="screen"
 
-						style="z-index: 11; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#ff5e14;font-family:Poppins;letter-spacing:-5px;"
+						style="z-index: 11; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#0400f5;font-family:Poppins;letter-spacing:-5px;"
 						id="t_seconds">00
 					</div>
 					<!-- LAYER NR. 8 -->
@@ -313,75 +311,7 @@
 						data-paddingleft="[0,0,0,0]"
 
 						style="z-index: 15; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 25px; line-height: 25px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Poppins;">SECONDES
-					</div>
-					<!-- LAYER NR. 12 -->
-					<a class="tp-caption tp-resizeme" target="_blank" href="assets/javascript:void(0);" id="slide-414-layer-16"
-						data-x="['left','left','left','left']" data-hoffset="['100','50','50','30']"
-						data-y="['bottom','bottom','bottom','bottom']" data-voffset="['100','100','50','30']"
-						data-width="60"
-						data-height="60"
-						data-whitespace="nowrap"
-
-						data-type="text"
-						data-actions=''
-						data-basealign="slide"
-						data-responsive_offset="on"
-
-						data-frames='[{"delay":2000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255, 255, 255, 1.00);bg:rgba(59, 89, 152, 1.00);bc:rgba(59, 89, 152, 1.00);"}]'
-						data-textAlign="['center','center','center','center']"
-						data-paddingtop="[0,0,0,0]"
-						data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
-
-						style="z-index: 16; min-width: 60px; max-width: 60px; max-width: 60px; max-width: 60px; white-space: nowrap; font-size: 20px; line-height: 60px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;border-color:rgba(255, 255, 255, 1.00);border-style:solid;border-width:2px 2px 2px 2px;border-radius:50% 50% 50% 50%;cursor:pointer;"><i class="fab fa-facebook-f"></i> </a>
-
-					<!-- LAYER NR. 13 -->
-					<a class="tp-caption tp-resizeme" target="_blank" href="assets/javascript:void(0);" id="slide-414-layer-17"
-						data-x="['left','left','left','left']" data-hoffset="['170','120','120','100']"
-						data-y="['bottom','bottom','bottom','bottom']" data-voffset="['100','100','50','30']"
-						data-width="60"
-						data-height="60"
-						data-whitespace="nowrap"
-
-						data-type="text"
-						data-actions=''
-						data-basealign="slide"
-						data-responsive_offset="on"
-
-						data-frames='[{"delay":2000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255, 255, 255, 1.00);bg:rgba(85, 172, 238, 1.00);bc:rgba(85, 172, 238, 1.00);"}]'
-						data-textAlign="['center','center','center','center']"
-						data-paddingtop="[0,0,0,0]"
-						data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
-
-						style="z-index: 17; min-width: 60px; max-width: 60px; max-width: 60px; max-width: 60px; white-space: nowrap; font-size: 20px; line-height: 60px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;border-color:rgba(255, 255, 255, 1.00);border-style:solid;border-width:2px 2px 2px 2px;border-radius:50% 50% 50% 50%;cursor:pointer;"><i class="fab fa-twitter"></i> </a>
-
-					<!-- LAYER NR. 14 -->
-					<a class="tp-caption tp-resizeme" target="_blank" href="assets/javascript:void(0);" id="slide-414-layer-18"
-						data-x="['left','left','left','left']"
-						data-hoffset="['240','190','190','170']"
-						data-y="['bottom','bottom','bottom','bottom']"
-						data-voffset="['100','100','50','30']"
-						data-width="60"
-						data-height="60"
-						data-whitespace="nowrap"
-
-						data-type="text"
-						data-actions=''
-						data-basealign="slide"
-						data-responsive_offset="on"
-
-						data-frames='[{"delay":2000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255, 255, 255, 1.00);bg:rgba(221, 75, 57, 1.00);bc:rgba(221, 75, 57, 1.00);"}]'
-						data-textAlign="['center','center','center','center']"
-						data-paddingtop="[0,0,0,0]"
-						data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
-
-						style="z-index: 18; font-size: 20px; line-height: 60px; font-weight: 400; width: 60px; height: 60px; color: rgba(255, 255, 255, 1.00); font-family:Open Sans; border: 2px solid rgba(255, 255, 255, 1.00); border-radius: 50%;"><i class="fab fa-google-plus-g"></i> </a>
-				</li>
+					</div></li>
 			</ul>
 			<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
 		</div>
@@ -464,11 +394,13 @@ var tpj=jQuery;
 				}
 			});
 		}
+        const dateAu10Octobre = new Date(2024, 9, 10);
+        const timestampAu10Octobre = dateAu10Octobre.getTime();
 
-		var targetdate =  new Date().getTime() + (2*24*60*60*1000) // i.e. '2015/12/31 24:00',
+		var targetdate =   timestampAu10Octobre; // i.e. '2015/12/31 24:00',
 			slidechanges = [
-				{ days:0, hours:0, minutes:0, seconds:12, slide:2},
-				{ days:0, hours:0, minutes:0, seconds:0, slide:3}
+				{ days:0, hours:0, minutes:0, seconds:0, slide:1},
+				{ days:0, hours:0, minutes:0, seconds:0, slide:1}
 			];
 
 		tp_countdown(revapi152,targetdate,slidechanges);

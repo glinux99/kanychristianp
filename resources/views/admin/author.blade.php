@@ -39,7 +39,7 @@
 
         <!--end::Page title-->
         <!--begin::Actions-->
-        <div class="d-flex align-items-center py-1">
+        <div class="my-3">
             <!--begin::Button-->
             <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#add_book" >Ajouter un auteur</a>
             <!--end::Button-->
@@ -127,7 +127,7 @@
                                         </span>
                                         <!--end::Svg Icon-->
                                     </a>
-                                    <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                    <a  onclick="updateFunctionAuthor({{ $author }})" data-bs-toggle="modal" data-bs-target="#add_book" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
                                         <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
                                         <span class="svg-icon svg-icon-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -137,7 +137,7 @@
                                         </span>
                                         <!--end::Svg Icon-->
                                     </a>
-                                    <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+                                    <a href="/author/{{ $author->id }}" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
                                         <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
                                         <span class="svg-icon svg-icon-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -207,16 +207,17 @@
                         <!--begin::Label-->
                         <label class="d-flex align-items-center fs-6 fw-bold mb-2">
                             <span class="required">Nom de l'auteur</span>
-                            <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Entrez le nom de cet auteur pour ajouter ses livres" aria-label="Specify a target name for future usage and reference" data-bs-original-title="Entrez le nom de cet auteur pour ajouter ses livres" aria-label="Specify a target name for future usage and reference"></i>
+                            <i class="fas fa-exclamation-circle ms-2 fs-7"  data-bs-toggle="tooltip" title="Entrez le nom de cet auteur pour ajouter ses livres" aria-label="Specify a target name for future usage and reference" data-bs-original-title="Entrez le nom de cet auteur pour ajouter ses livres" aria-label="Specify a target name for future usage and reference"></i>
                         </label>
+                        <input type="hidden" name="id" id="id">
                         <!--end::Label-->
-                        <input type="text" class="form-control form-control-solid" placeholder="Entrez le nom complet" name="name">
+                        <input type="text" class="form-control form-control-solid" id="name" placeholder="Entrez le nom complet" name="name">
                     <div class="fv-plugins-message-container invalid-feedback"></div></div>
                     <!--end::Input group-->
                     <!--begin::Input group-->
                     <div class="d-flex flex-column mb-8">
                         <label class="fs-6 fw-bold mb-2">Description de l'auteur</label>
-                        <textarea class="form-control form-control-solid" rows="3" name="description" placeholder="Une breve description de l'auteur"></textarea>
+                        <textarea class="form-control form-control-solid" id="description" rows="3" name="description" placeholder="Une breve description de l'auteur"></textarea>
                     </div>
                     <!--end::Input group-->
                     <!--end::Input group-->

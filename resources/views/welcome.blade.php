@@ -103,7 +103,10 @@
                             data-paddingright="[0,0,0,0]"
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
-                            style="z-index: 7; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif;">Lisez nos livres de partout sans soucis
+                            style="z-index: 7; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif;">
+                            <span class="fs-4 fw-bolder">
+                                Lisez nos livres de partout sans soucis
+                            </span>
                         </div>
                         <!-- LAYER NR. 4 -->
                         <div class="tp-caption Creative-Title tp-resizeme rs-parallaxlevel-1"
@@ -170,7 +173,7 @@
                             data-paddingright="[50,50,50,30]"
                             data-paddingbottom="[15,15,15,15]"
                             data-paddingleft="[50,50,50,30]"
-                            style="z-index: 10; white-space: nowrap; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;font-family: 'Roboto Condensed', sans-serif; border-color: var(--color-primary);"><a href="/books">VOIR PLUS DE LIVRES</a>
+                            style="z-index: 10; white-space: nowrap; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;font-family: 'Roboto Condensed', sans-serif; border-color: var(--color-primary);"><a href="/books" class="fw-bolder h5">VOIR PLUS DE LIVRES</a>
                         </div>
                     </li>
 
@@ -187,9 +190,9 @@
         {{-- About autor --}}
         <div class="section-full p-0 m-0" id="apropos">
             <div class="row m-0 p-0">
-                <div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbsl latest-project-info p-3 bg-primary wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
+                <div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbsl latest-project-info p-3 bg-primary wow fadeInLeft " data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="text-white ">
-                        <h3 >A propos de <span class="text-dark">KANY</span>CHRISTIAN</h3>
+                        <h3 >A propos de <span class="text-dark fw-bolder">KANY</span><span class="fw-bolder">CHRISTIAN</span></h3>
                         <p class="fw-semibold fs-6 fs-lg-4 text-justify">
                             Écrivain, penseur, ingénieur et prédicateur de l'évangile, Christian Kany est un homme
                             aux multiples facettes, dont l'engagement pour la jeunesse africaine ne cesse
@@ -228,7 +231,7 @@
                             <div class="overlay-bx">
                                 <div class="overlay-icon">
                                     <a href="javascript:void(0);"> <i class="fas fa-play icon-bx-xs"></i> </a>
-                                    <span data-exthumbimage="assets/images/main-slider/images0.jpg"" data-src="assets/images/main-slider/images0.jpg" class="check-km" title="Linux99 Viewer Panel">
+                                    <span data-exthumbimage="assets/images/main-slider/images0.jpg" data-src="assets/images/main-slider/images0.jpg" class="check-km" title="Linux99 Viewer Panel">
                                     <i class="fas fa-search icon-bx-xs"></i>
                                 </span>
                                 </div>
@@ -257,9 +260,9 @@
                             </div>
                         </div>
 
-                        <a class="d-block dlab-info" href="{{ $book->file }}" >
+                        <a class="d-block dlab-info"onclick="addingDonwloadBook($book->id)" href="{{ $book->file }}" >
                             <h4 class="bg-primary rounded p-1 d-flex justify-content-between align-items-center">
-                                <a href="{{ $book->file }}" onclick="addingDonwloadBook($book->id)" class="p-2 text-white">
+                                <a  onclick="addingDonwloadBook($book->id)" href="{{ $book->file }}"  class="p-2 text-white">
                                     {{ $book->title }}
                                 </a>
                                 <a href="{{ $book->file }}" onclick="addingDonwloadBook($book->id)" class="text-white">
@@ -317,7 +320,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                         <div class="counter-style-1 text-center text-white">
                             <div class="">
-                                <span class="counter">7652</span>
+                                <span class="counter">{{ $visitors }}</span>
                             </div>
                             <span class="counter-text">Visiteurs</span>
                         </div>

@@ -1,5 +1,5 @@
 
-<section class="bg-dark py-5 text-light footer-widget">
+<section class="bg-dark py-5 text-light footer-widget mw-100">
     <div class="container">
         <div class="row text-white">
             <div class="col-lg-4 d-none d-lg-block d-md-block text-center text-md-left">
@@ -66,7 +66,7 @@
                         <li class="mb-2">
                             <span class="d-block opacity-30">Email:</span>
                             <span class="d-block opacity-70">
-                                <a href="mailto:support@kanycrhistian.com" class="text-white">support@kanycrhistian.com</a>
+                                <a href="mailto:support@kanycrhistian.com" class="text-white fs-9">support@kanychristian.com</a>
                             </span>
                         </li>
                     </ul>

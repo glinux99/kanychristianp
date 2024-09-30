@@ -29,7 +29,10 @@ class CategorieController extends Controller
      */
     public function store(Request $request)
     {
-        Categorie::create($request->all());
+        if($request->id!=null){
+            return $this->update($request, Categorie::find($request->id));
+        }
+        else Categorie::create($request->all());
         return $this->index();
     }
 
@@ -39,6 +42,7 @@ class CategorieController extends Controller
     public function show(Categorie $categorie)
     {
         //
+        return 11;
     }
 
     /**
@@ -54,14 +58,16 @@ class CategorieController extends Controller
      */
     public function update(Request $request, Categorie $categorie)
     {
-        //
+        $categorie->update($request->all());
+        return $this->index();
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Categorie $categorie)
+    public function destroy( $categorie)
     {
-        //
+        Categorie::find($categorie)->delete();
+        return $this->index();
     }
 }
