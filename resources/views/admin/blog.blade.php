@@ -53,15 +53,17 @@
 											<!--begin::Modal body-->
 											<div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
 												<!--begin:Form-->
-												<form id="kt_modal_new_target_form" class="form" action="#">
+												<form id="kt_modal_new_target_form" class="form" action="{{ route('blogs.store') }}" method="POST">
+													<!--begin::Heading-->
+                                                    @csrf>
 													<!--begin::Heading-->
 													<div class="mb-13 text-center">
 														<!--begin::Title-->
-														<h1 class="mb-3">Set First Target</h1>
+														<h1 class="mb-3">Publier un article</h1>
 														<!--end::Title-->
 														<!--begin::Description-->
-														<div class="text-muted fw-bold fs-5">If you need more info, please check
-														<a href="#" class="fw-bolder link-primary">Project Guidelines</a>.</div>
+														<div class="text-muted fw-bold fs-5">Rien n'est plus beau que d'informer son audience
+														<a href="#" class="fw-bolder link-primary">$REad</a>.</div>
 														<!--end::Description-->
 													</div>
 													<!--end::Heading-->
@@ -69,26 +71,20 @@
 													<div class="d-flex flex-column mb-8 fv-row">
 														<!--begin::Label-->
 														<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-															<span class="required">Target Title</span>
+															<span class="required">Titre</span>
 															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i>
 														</label>
 														<!--end::Label-->
-														<input type="text" class="form-control form-control-solid" placeholder="Enter Target Title" name="target_title" />
+														<input type="text" class="form-control form-control-solid" placeholder="Titre du blog" name="title" />
 													</div>
 													<!--end::Input group-->
 													<!--begin::Input group-->
 													<div class="row g-9 mb-8">
 														<!--begin::Col-->
 														<div class="col-md-6 fv-row">
-															<label class="required fs-6 fw-bold mb-2">Assign</label>
-															<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Select a Team Member" name="target_assign">
-																<option value="">Select user...</option>
-																<option value="1">Karina Clark</option>
-																<option value="2">Robert Doe</option>
-																<option value="3">Niel Owen</option>
-																<option value="4">Olivia Wild</option>
-																<option value="5">Sean Bean</option>
-															</select>
+															<label class="required fs-6 fw-bold mb-2">Publier par</label>
+                                                            <input type="text" class="form-control form-control-solid" placeholder="Entrez celui qui publie le document" name="editedBy" />
+
 														</div>
 														<!--end::Col-->
 														<!--begin::Col-->
@@ -108,7 +104,7 @@
 																<!--end::Svg Icon-->
 																<!--end::Icon-->
 																<!--begin::Datepicker-->
-																<input class="form-control form-control-solid ps-12" placeholder="Select a date" name="due_date" />
+																<input class="form-control form-control-solid ps-12" placeholder="Selectionner une date" name="due_date" />
 																<!--end::Datepicker-->
 															</div>
 															<!--end::Input-->
@@ -118,14 +114,14 @@
 													<!--end::Input group-->
 													<!--begin::Input group-->
 													<div class="d-flex flex-column mb-8">
-														<label class="fs-6 fw-bold mb-2">Target Details</label>
-														<textarea class="form-control form-control-solid" rows="3" name="target_details" placeholder="Type Target Details"></textarea>
+														<label class="fs-6 fw-bold mb-2">Details</label>
+														<textarea class="form-control form-control-solid" rows="3" name="description" placeholder="Type Target Details"></textarea>
 													</div>
 													<!--end::Input group-->
 													<!--begin::Input group-->
 													<div class="d-flex flex-column mb-8 fv-row">
 														<!--begin::Label-->
-														<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+														<label class="d-flex align-items-center d-none fs-6 fw-bold mb-2">
 															<span class="required">Tags</span>
 															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target priorty"></i>
 														</label>
@@ -133,57 +129,11 @@
 														<input class="form-control form-control-solid" value="Important, Urgent" name="tags" />
 													</div>
 													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="d-flex flex-stack mb-8">
-														<!--begin::Label-->
-														<div class="me-5">
-															<label class="fs-6 fw-bold">Adding Users by Team Members</label>
-															<div class="fs-7 fw-bold text-muted">If you need more info, please check budget planning</div>
-														</div>
-														<!--end::Label-->
-														<!--begin::Switch-->
-														<label class="form-check form-switch form-check-custom form-check-solid">
-															<input class="form-check-input" type="checkbox" value="1" checked="checked" />
-															<span class="form-check-label fw-bold text-muted">Allowed</span>
-														</label>
-														<!--end::Switch-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="mb-15 fv-row">
-														<!--begin::Wrapper-->
-														<div class="d-flex flex-stack">
-															<!--begin::Label-->
-															<div class="fw-bold me-5">
-																<label class="fs-6">Notifications</label>
-																<div class="fs-7 text-muted">Allow Notifications by Phone or Email</div>
-															</div>
-															<!--end::Label-->
-															<!--begin::Checkboxes-->
-															<div class="d-flex align-items-center">
-																<!--begin::Checkbox-->
-																<label class="form-check form-check-custom form-check-solid me-10">
-																	<input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="email" checked="checked" />
-																	<span class="form-check-label fw-bold">Email</span>
-																</label>
-																<!--end::Checkbox-->
-																<!--begin::Checkbox-->
-																<label class="form-check form-check-custom form-check-solid">
-																	<input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="phone" />
-																	<span class="form-check-label fw-bold">Phone</span>
-																</label>
-																<!--end::Checkbox-->
-															</div>
-															<!--end::Checkboxes-->
-														</div>
-														<!--end::Wrapper-->
-													</div>
-													<!--end::Input group-->
 													<!--begin::Actions-->
 													<div class="text-center">
-														<button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Cancel</button>
-														<button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
-															<span class="indicator-label">Submit</span>
+														<button type="reset"  class="btn btn-light me-3">Cancel</button>
+														<button type="submit"  class="btn btn-primary">
+															<span class="indicator-label">Envoyer</span>
 															<span class="indicator-progress">Please wait...
 															<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 														</button>

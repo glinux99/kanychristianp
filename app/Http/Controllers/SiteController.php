@@ -30,13 +30,14 @@ class SiteController extends Controller
         // Comparaison
         if ($dateActuelle->lte($dateComparee)) {
             // dd($date);
-            return view('welcome', ['books'=>$books, 'visitors'=>$vistors]);
+            // return view('welcome', ['books'=>$books, 'visitors'=>$vistors]);
 
             $date = Carbon::createFromFormat('d-M-Y', $date);
            return view('comming', ['avatar'=>$avatar, 'due_date'=>$date]);
         } else {
             // dd($date);
-            return view('welcome', ['books'=>$books, 'visitors'=>$vistors]);
+            $blogs= Blog::all();
+            return view('welcome', ['books'=>$books, 'visitors'=>$vistors, 'blogs'=>$blogs]);
         }
         } catch (\Throwable $th) {
             //throw $th;

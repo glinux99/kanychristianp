@@ -278,7 +278,7 @@
         </div>
         <!-- About Us End -->
         <!-- Latests News -->
-        <div class="section-full content-inner bg-white" id="blogs">
+        <div class="section-full content-inner bg-white d-none" id="blogs">
             <div class="container">
                 <div class="section-head text-black text-center">
                     <h2 class="title">DERNIERE NOUVELLE</h2>

@@ -29,7 +29,8 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Blog::create($request->all());
+        return back();
     }
 
     /**
