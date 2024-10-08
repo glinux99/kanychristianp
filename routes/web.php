@@ -14,6 +14,9 @@ Route::get('/', [SiteController::class, 'index']);
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::fallback(function () {
+    return redirect()->to("/");
+});
 Route::get('/comming', function () {
     return view('comming');
 });

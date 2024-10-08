@@ -52,7 +52,8 @@
 			<ul><!-- SLIDE  -->
 				<li data-index="rs-414" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 					<!-- MAIN IMAGE -->
-					<img src="{{ $avatar }}"  alt="image" style="background: no-repeat"  data-bgposition="center center" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+					<img src="{{ $avatar }}"  alt="image"  data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgposition="" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" style="  background-size: contain!important; /* Ou contain, selon vos besoins */
+                    background-position: center;  background-repeat: no-repeat!important" data-no-retina>
 					<!-- LAYERS -->
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption   tp-resizeme"
@@ -193,7 +194,7 @@
 						data-paddingleft="[0,0,0,0]"
 						data-blendmode="screen"
 
-						style="z-index: 10; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#0400f5;font-family:Poppins;letter-spacing:-5px;"
+						style="z-index: 10; min-width: 300px; max-width: 300px; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color:#f50000;font-family:Poppins;letter-spacing:-5px;"
 						id="t_minutes">00
 					</div>
 					<!-- LAYER NR. 7 -->
@@ -394,7 +395,7 @@ var tpj=jQuery;
 				}
 			});
 		}
-        const dateAu10Octobre = new Date(2024, 9, 10);
+        const dateAu10Octobre = new Date("{{ $due_date->format('Y-m-d') }}")
         const timestampAu10Octobre = dateAu10Octobre.getTime();
 
 		var targetdate =   timestampAu10Octobre; // i.e. '2015/12/31 24:00',

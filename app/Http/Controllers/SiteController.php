@@ -29,7 +29,11 @@ class SiteController extends Controller
 
         // Comparaison
         if ($dateActuelle->lte($dateComparee)) {
-           return view('comming', ['avatar'=>$avatar]);
+            // dd($date);
+            return view('welcome', ['books'=>$books, 'visitors'=>$vistors]);
+
+            $date = Carbon::createFromFormat('d-M-Y', $date);
+           return view('comming', ['avatar'=>$avatar, 'due_date'=>$date]);
         } else {
             // dd($date);
             return view('welcome', ['books'=>$books, 'visitors'=>$vistors]);
