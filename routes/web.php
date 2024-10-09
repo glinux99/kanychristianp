@@ -24,13 +24,10 @@ Route::get('/blog-detail', function () {
     return view('blog_detail');
 });
 Route::get('/blogs', [SiteController::class, 'blogs']);
+Route::get('/download/{id}', [SiteController::class, 'donwloads']);
 Route::get('/books', [SiteController::class, 'books']);
-Route::get('/books-new', function () {
-    return view('blog_detail');
-});
-Route::get('/books-better', function () {
-    return view('blog_detail');
-});
+Route::get('/books-news', [SiteController::class, 'book_new']);
+Route::get('/books-better', [SiteController::class, 'book_better']);
 Route::get('artisan/{query}', function ($query) {
     Artisan::call($query);
     $output = Artisan::output();

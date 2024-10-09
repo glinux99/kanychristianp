@@ -260,12 +260,12 @@
                             </div>
                         </div>
 
-                        <a class="d-block dlab-info"onclick="addingDonwloadBook($book->id)" href="{{ $book->file }}" >
+                        <a class="d-block dlab-info" target="_blank" onclick="addingDonwloadBook($book->id)" href="{{ $book->file }}" >
                             <h4 class="bg-primary rounded p-1 d-flex justify-content-between align-items-center">
-                                <a  onclick="addingDonwloadBook($book->id)" href="{{ $book->file }}"  class="p-2 text-white">
+                                <a   onclick="addingDonwloadBook($book->id)" href="{{ $book->file }}"  class="p-2 text-white">
                                     {{ $book->title }}
                                 </a>
-                                <a href="{{ $book->file }}" onclick="addingDonwloadBook($book->id)" class="text-white">
+                                <a   onclick="addingDonwloadBook(1)" class="text-white">
                                     <i class="fa fa-download me-2"></i>
                                 </a>
                             </h4>
@@ -338,9 +338,11 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
                         <div class="counter-style-1 text-center text-white">
                             <div class="">
-                                <span class="counter">3569</span>
+                                <span class="counter">
+                                    {{ $download }}
+                                </span>
                             </div>
-                            <span class="counter-text">Telechargement</span>
+                            <span class="counter-text">Telechargement{{ $download>1? 's': '' }}</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">

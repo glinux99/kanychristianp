@@ -24,4 +24,7 @@ class Book extends Model
     public function categorie(){
         return $this->hasMany(Categorie::class, 'id', 'categorie_id');
     }
+    public function better(){
+        return $this->hasMany(Visitor::class, 'book_id', 'id');
+    }
 }

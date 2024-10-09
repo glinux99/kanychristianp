@@ -34,8 +34,14 @@
 <script src="assets/plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
 <script src="assets/js/rev.slider.js"></script>
 <script>
-     function addingDonwloadBook($id){
-        alert(2222);
+    async function addingDonwloadBook($id){
+        fetch('/download/'+$id, {
+    method: 'GET'
+        })
+        .then(response => console.log(response))
+        .catch(error => {
+            console.error(error);
+        });
     }
 jQuery(document).ready(function() {
 	'use strict';

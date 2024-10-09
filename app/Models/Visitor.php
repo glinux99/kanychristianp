@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Visitor extends Model
 {
     use HasFactory;
-    protected $fillable =['ip'];
+    protected $fillable =['ip', 'download', 'book_id'];
     public static function enregistrerVisite(){
         $ip = request()->ip();
         $existe = self::where('ip', $ip)
